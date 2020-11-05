@@ -5,6 +5,7 @@ int main(int argc, char const *argv[])
 {
     sf::RenderWindow window(sf::VideoMode(800,600),"Spooky action at a distance");
     sf::CircleShape shape(50.f);
+    sf::RectangleShape shape2(sf::Vector2f(100.f,100.f));
     shape.setPosition(400,300);
     while(window.isOpen())
     {
@@ -16,6 +17,7 @@ int main(int argc, char const *argv[])
         }
         window.clear();
         window.draw(shape);
+        window.draw(shape2);
         window.display();
 
     }
